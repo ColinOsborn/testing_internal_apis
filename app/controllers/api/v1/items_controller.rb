@@ -14,6 +14,7 @@ class Api::V1::ItemsController < ApplicationController
 
   def update
     render json: Item.update(params[:id], item_params)
+    #status: 204 success, no content
   end
 
   private
